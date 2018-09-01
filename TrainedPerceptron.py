@@ -37,5 +37,3 @@ class DataAccessObject:
 
 
 dao = DataAccessObject()
-print(dao.desiredOutput)
-print(dao.inputData)
