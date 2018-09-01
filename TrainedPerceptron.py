@@ -17,7 +17,7 @@ class DataAccessObject:
     inputData = []
     desiredOutput = []
     valuesPerVector = None
-    inputSize = None
+    howManyInput = None
 
     def __init__(self):
         self.get_data()
@@ -34,6 +34,8 @@ class DataAccessObject:
                     self.inputData.append([])
             for value in range(1, size):
                 self.inputData[value-1].append(float(fields[value]))
-
+        self.valuesPerVector = len(self.desiredOutput)
+        self.howManyInput = len(self.inputData)
 
 dao = DataAccessObject()
+
